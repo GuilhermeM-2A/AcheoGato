@@ -1,0 +1,20 @@
+body{
+    background: rgb(241, 128, 128);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+button{
+    padding: 20px;
+    text-size-adjust: 30px;
+}
+
+.passo{
+    display: none;
+}
+
+.passo.ativo{
+    display: block;
+}

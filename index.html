@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <TItle>Ache o Gato</TItle>
+
+</head>
+
+<body>
+    <main>
+        
+        <div class="passo ativo" id="passo-0">
+            <h1>Ache o Gato</h1>
+            <p>O seu objetivo desses jogo é achar o gato que esta perdido pela casa</p>
+            <p>Boa Sorte !!!</p>
+            <button class="btn-proximo" data-proximo="1"> Comece a Procurar </button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <h1>Entrada</h1>
+            <img src="Fotos/3.jpg">
+            <p>vc esta na entrada da casa, por onde vc vai começar a procurar?</p>
+            <button class="btn-proximo" data-proximo="2"> Sala de Jantar </button>
+            <button class="btn-proximo" data-proximo="3"> Cozinha </button>  
+        </div>
+
+        <div class="passo" id="passo-2">
+            <h1>Sala de Jantar</h1>
+            <img src="Fotos/1.jpg">
+            <p> Depois de entrar na sala de Jantar,<br> 
+                você viu que ele não esta aqui,<br>
+                então para onde irá seguir</p>
+            <button class="btn-proximo" data-proximo="4"> Jardim </button>
+            <button class="btn-proximo" data-proximo="5"> Sala social </button>  
+        </div>
+
+        <div class="passo" id="passo-3">
+            <h1>Cozinha</h1>
+            <img src="Fotos/2.jpg">
+            <p> Depois de entrar na Cozinha,<br> 
+                você procurou ele em todos,<br>
+                os cantos, e viu que ele não está<br>
+                então para onde irá seguir</p>
+            <button class="btn-proximo" data-proximo="6"> Corredor </button>
+            <button class="btn-proximo" data-proximo="7"> Lavanderia </button>  
+        </div>
+
+        <div class="passo" id="passo-4">
+            <h1>Jardim</h1>
+            <img src="Fotos/4.jpg">
+            <p> 
+                Você resolveu ir para o lado <br>
+                de fora da casa, só que o <br>
+                gato não esta aqui, para onde mais <br>
+                você vai procurar? 
+            </p>
+            
+            <button class="btn-proximo" data-proximo="8"> Banheiro </button>
+            <button class="btn-proximo" data-proximo="9"> Varanda </button>  
+        </div>
+
+        <div class="passo" id="passo-5">
+            <h1>Sala social</h1>
+            <img src="Fotos/2.jpg">
+            <p>
+                Depois da sala de Jantar você <br>
+                entrou direto em uma Sala Social <br>
+                e ainda não achou o Gato. Qual <br>
+                o proximo lugar?
+            </p>
+            <button class="btn-proximo" data-proximo="9"> Varanda </button>
+            <button class="btn-proximo" data-proximo="10"> Corredor </button>  
+        </div>
+
+        <div class="passo" id="passo-6">
+            <h1>Corredor</h1>
+            <img src="Fotos/1.jpg">
+            <p> Depois de passar aqui vc deu da cara <br>
+                com duas portas qual você deve entrar?
+            </p> 
+            <button class="btn-proximo" data-proximo="11"> Suite </button>
+            <button class="btn-proximo" data-proximo="8"> Banheiro </button>  
+        </div>
+
+        <div class="passo" id="passo-7">
+            <h1>Lavanderia</h1>
+            <img src="Fotos/3.jpg">
+            <p> Você chegou ao fim da busca </p>
+            <h2> Não conseguiu achar o Gato </h2>
+            <button class="btn-proximo" data-proximo="0"> Tente novamente </button> 
+        </div>
+
+        <div class="passo" id="passo-8">
+            <h1>Banheiro</h1>
+            <img src="Fotos/4.jpg">
+            <p> Você chegou ao fim da busca </p>
+            <h2> Não conseguiu achar o Gato </h2>
+            <button class="btn-proximo" data-proximo="0"> Tente novamente </button>
+            
+        </div>
+
+        <div class="passo" id="passo-9">
+            <h1>Varanda</h1>
+            <img src="Fotos/3.jpg">
+            <p> Apos entrar na varanda viu que tinha <br>
+                apenas um caminho a seguir.
+            </p>
+            <button class="btn-proximo" data-proximo="13"> Quarto </button>
+            
+        </div>
+
+        <div class="passo" id="passo-10">
+            <h1>Corredor</h1>
+            <img src="Fotos/2.jpg">
+            <p> Depois de passar aqui vc deu da cara <br>
+                com duas portas qual você deve entrar?
+            </p>
+            <button class="btn-proximo" data-proximo="13"> Quarto </button>
+            <button class="btn-proximo" data-proximo="14"> Closed </button>  
+        </div>
+
+        <div class="passo" id="passo-11">
+            <h1>Suite</h1>
+            <img src="Fotos/1.jpg">
+            <p>
+                Apos entrar e revirar a suite viu que ele <br> 
+                só poderia estao em um lugar. Seu Closed
+            </p>
+            <button class="btn-proximo" data-proximo="14"> Closed </button>
+            
+        </div>
+
+
+        <div class="passo" id="passo-13">
+            <h1>Quarto</h1>
+            <img src="Fotos/2.jpg">
+            <p> Apos entrar e revirar seu Quarto viu que ele <br> 
+                só poderia estao em um lugar. Seu Closed
+            </p>
+            <button class="btn-proximo" data-proximo="14"> Closed </button>
+            
+        </div>
+
+        <div class="passo" id="passo-14">
+            <h1>Closed</h1>
+            <img src="Fotos/3.jpg">
+            <p> Entrando no Closed você viu seu Gato. <br> 
+                Dormindo como um anjo
+            </p>
+            <button class="btn-proximo" data-proximo="15"> Pegar o Gato </button>
+           
+        </div>
+
+        <div class="passo" id="passo-15">
+            <h1>Fim</h1>
+            <img src="Fotos/4.jpg">
+            <p>Parabens vc achou o Gato</p>
+            
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
